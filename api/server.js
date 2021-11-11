@@ -22,12 +22,13 @@ app.get('/users', (req, res) => {
 });
 
 app.post('/user', (req, res) => {
-
+    
     const user = req.body.user;
     users.push(user);
     res.json("user added");
 
 });
+
 
 app.get('/', (req,res) => {
     res.send('App Works !');
