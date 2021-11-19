@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const DisplayBoard = ({numberOfUsers, getAllUsers}) => {
+export const DisplayBoard = ({numberOfUsers, getAllUsersA}) => {
 
     
     return(
@@ -10,7 +10,7 @@ export const DisplayBoard = ({numberOfUsers, getAllUsers}) => {
             {numberOfUsers}
             </div>
             <div className="btn">
-                <button type="button" onClick={(e) => getAllUsers()} className="btn btn-warning">Get all Users</button>
+                <button type="button" onClick={(e) => getAllUsersA()} className="btn btn-warning">Get all Users</button>
             </div>
         </div>
     )

@@ -61,7 +61,7 @@ accountRoutes.put('/account/:id',(req,res) => {
         const accountId = req.params['id'];
         existAccounts[accountId] = req.body;
         saveAccountData(existAccounts);
-        res.send(`accounts with ${accountId} has been updated `)
+        res.send(`accounts with ${accountId} has been updated`)
     },true);
 });
 
