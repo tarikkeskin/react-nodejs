@@ -52,7 +52,7 @@ class Users extends React.Component {
               <List>
                 {Accounts.map(account => {
                     return (
-                    <Card style={{ width: '18rem' ,height:'13rem'}}>
+                    <Card style={{ width: '18rem' ,height:'13rem'}} key={account.firstName}>
                         <Card.Body>
                             <Card.Title>{account.firstName}</Card.Title>
                             <Card.Text>
