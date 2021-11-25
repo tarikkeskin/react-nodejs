@@ -19,7 +19,6 @@ class App extends Component {
 
   state = {
       user: {},
-      users: [],
       numberOfUsers:0
     };  
 
@@ -56,6 +55,7 @@ class App extends Component {
       this.setState({user})
 
     }
+    
   
   
     render() {
@@ -87,13 +87,17 @@ class App extends Component {
                 <Users />
               </div>  
 
-              <Stage width={window.innerWidth} height={window.innerHeight} >
+              {
+              /*<Stage width={window.innerWidth} height={window.innerHeight} >
                 <Layer >   
                   <Shape />
                   <ColoredRect />
                   <Stars />
                 </Layer>
               </Stage>
+              */
+              }
+              
             </div>
 
          

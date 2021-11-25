@@ -27,6 +27,7 @@ function generateShapes() {
         })
       );
     };
+
     const handleDragEnd = (e) => {
       setStars(
         stars.map((star) => {

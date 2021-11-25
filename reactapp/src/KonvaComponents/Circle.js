@@ -13,7 +13,7 @@ const Shape = () => {
         y={0}
         draggable
         radius={50}
-        fill='green'
+        fill={color}
         onDragEnd={() => {
           setColor(Konva.Util.getRandomColor());
         }}

@@ -45,13 +45,13 @@ export async function deleteUserServices(id){
 
 export async function updateServices(id,firstName,email){
 
-    const response = await fetch('/account/update/'+id+'*'+firstName+'*'+email,{
+    const response = await fetch('/account/update/'+id,{
         
         method: 'PUT',
         headers: {'Content-Type': 'application/json',
         'Accept': 'application/json'
                         },
-        body: JSON.stringify()
+        body: JSON.stringify({id,firstName,email})  // creates json
     });
 
     return await response;
